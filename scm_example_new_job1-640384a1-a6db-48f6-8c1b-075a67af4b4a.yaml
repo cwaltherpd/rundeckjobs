@@ -1,0 +1,21 @@
+- defaultTab: nodes
+  description: new test job
+  executionEnabled: true
+  loglevel: INFO
+  name: scm_example_new_job1
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  runnerSelector:
+    filter: '0923204'
+    runnerFilterMode: TAGS
+    runnerFilterType: TAG_FILTER_AND
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - description: step 1
+      exec: echo "Hello Github"
+    keepgoing: false
+    strategy: node-first
+
