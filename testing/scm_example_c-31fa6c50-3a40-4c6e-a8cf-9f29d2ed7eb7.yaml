@@ -1,6 +1,6 @@
 - defaultTab: nodes
   description: Testing SCM
-  executionEnabled: true
+  executionEnabled: false
   group: testing
   loglevel: INFO
   name: scm_example_c
