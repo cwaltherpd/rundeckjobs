@@ -1,9 +1,8 @@
 - defaultTab: nodes
-  description: Testing SCM
+  description: test job
   executionEnabled: true
-  group: testing
   loglevel: INFO
-  name: scm_example_c
+  name: test_job2
   nodeFilterEditable: false
   plugins:
     ExecutionLifecycle: {}
@@ -15,8 +14,7 @@
   schedules: []
   sequence:
     commands:
-    - description: Step is wrong
-      exec: echo "Step is wrong"
+    - exec: echo "test job2"
     keepgoing: false
     strategy: node-first
 
